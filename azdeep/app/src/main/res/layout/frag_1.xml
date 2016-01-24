@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context="com.example.deep.azdeep.frag_1"
+    android:id="@+id/f1_layout"
+    android:nestedScrollingEnabled="false">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f1_editText"
+        android:layout_gravity="right|top"
+        android:hint="   Write Here"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@drawable/edittextshape"
+        android:textSize="@dimen/abc_text_size_subtitle_material_toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.46"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Note"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/f1_save"
+            android:background="@drawable/buttonshape"
+            android:onClick="f1_save"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Everythimg"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/f1_clear"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:background="@drawable/buttonshape"
+            android:onClick="f1_clear"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Check Note"
+            android:id="@+id/f1_check"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:textColor="#ffffff"
+            android:onClick="f1_check"
+            android:background="@drawable/buttonshape" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Save Photo"
+            android:id="@+id/f1_save_image"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:textColor="#ffffff"
+            android:onClick="f1_save_image"
+            android:background="@drawable/buttonshape" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="Check Photo"
+            android:id="@+id/f1_check_image"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:textColor="#ffffff"
+            android:onClick="f1_check_image"
+            android:background="@drawable/buttonshape" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_menu_camera"
+            android:onClick="f1_camera" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_gravity="center_horizontal|center" />
+
+
+</FrameLayout>
